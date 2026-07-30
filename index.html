@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Finelo AI VISION PRO</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bg-animation"></div>
+
+<div class="container">
+  <div class="header">
+    <h1>🤖 FINELO AI VISION</h1>
+    <div class="live-dot"></div>
+  </div>
+  <p class="subtitle">Chart Scan + SMC + 50 Indicators</p>
+
+  <div class="glass-card">
+    <div class="tf-grid" id="tfGrid">
+      <button class="tf-btn active" data-tf="1min">1M</button>
+      <button class="tf-btn" data-tf="5min">5M</button>
+      <button class="tf-btn" data-tf="15min">15M</button>
+      <button class="tf-btn" data-tf="1h">1H</button>
+      <button class="tf-btn" data-tf="4h">4H</button>
+      <button class="tf-btn" data-tf="1day">1D</button>
+    </div>
+
+    <div class="input-box">
+      <select id="pair">
+        <option>EUR/USD</option><option>GBP/USD</option><option>USD/JPY</option>
+        <option>XAU/USD</option><option>BTC/USD</option><option>ETH/USD</option>
+        <option>AUD/USD</option><option>USD/CAD</option>
+      </select>
+    </div>
+
+    <div class="upload-box" onclick="document.getElementById('chartUpload').click()">
+      <label>📈 Chart Screenshot Upload Gar</label>
+      <input type="file" id="chartUpload" accept="image/*">
+      <img id="preview" style="display:none">
+    </div>
+
+    <button id="scanBtn"><span>⚡ AI SCAN NOW</span></button>
+  </div>
+
+  <div id="resultBox" class="glass-card">
+    <div class="loading">Timeframe chhanot gara ra Scan gara</div>
+  </div>
+  <div class="footer">*Educational Only. AI 100% sahi hundaina</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
