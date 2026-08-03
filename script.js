@@ -1,5 +1,5 @@
 const TWELVE_API_KEY = "a46c1cab01014657848de0c9b2096090"; // CHANGE GAR
-const GROQ_API_KEY = "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"; // CHANGE GAR
+const GROQ_API_KEY = "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"; // CHANGE GAR
 
 let selectedTF = "1min";
 let uploadedImage = null;
